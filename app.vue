@@ -1,19 +1,15 @@
 <script lang="ts" setup>
 import { useCounterStore } from '@/store/counter'
 
-/** store */
+
 const counterStore = useCounterStore()
 
-/**
- * increment実行
- */
+
 function increment() {
   counterStore.increment()
 }
 
-/**
- * storeの状態をリセット
- */
+
 function reset() {
   counterStore.$reset()
 }
